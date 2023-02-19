@@ -10,7 +10,7 @@ import './App.scss';
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={ <NavBar /> }>
-      <Route path="home" element={ <Home /> } />
+      <Route index element={ <Home /> } />
       <Route path="watchlist" element={ <WatchList /> } />
       <Route path="favorites" element={ <Favorites /> } />
     </Route>

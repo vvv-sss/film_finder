@@ -16,7 +16,7 @@ const ListOfGenres = () => {
     },[]);
 
     const handleClick = (e) => {
-        const listOfAllLabels = document.querySelectorAll(".genre-input");
+        const listOfAllLabels = document.querySelectorAll("label");
         const activeLabel = e.target.nextSibling;
 
         listOfAllLabels.forEach(label => {

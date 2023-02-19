@@ -1,0 +1,34 @@
+form {
+    width: 100%;
+    margin: $margin-centered;
+
+    .submit-btn {
+        width: 12rem;
+        padding: 0.5rem 1rem;
+        border: $base-border-width solid $color-grey;
+        border-radius: 100rem;
+        margin-top: 1rem;
+        background-color: transparent;
+        color: $color-white;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        -webkit-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        transition: all 0.1s;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $color-grey;
+            text-shadow: none;
+        }
+    }
+
+    .help-msg {
+        display: block;
+        margin-top: 0.5rem;
+        color: $color-black;
+        opacity: 1;
+        cursor: default;
+    }
+}

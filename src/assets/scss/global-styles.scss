@@ -1,0 +1,29 @@
+body {
+    padding: 1rem;
+    color: $color-white;
+    font-family: $font-family-primary;
+    background-image: url(../images/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    text-shadow: 1px 0px 4px $color-black-faded;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}

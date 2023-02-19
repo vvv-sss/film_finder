@@ -1,0 +1,60 @@
+@use 'sass:math';
+
+// Colors =====================
+
+$primary-color: hsl(29, 68%, 55%);
+
+$color-white: hsla(0, 0%, 100%, 100%);
+$color-white-faded: hsla(0, 0%, 100%, 50%);
+$color-black: hsl(0, 0%, 10%);
+$color-black-faded: hsla(0, 0%, 0%, 0.5);
+$color-grey: hsl(0, 0%, 30%);
+
+$primary-color-filtered: brightness(0) saturate(100%) invert(57%) sepia(83%) saturate(395%) hue-rotate(346deg) brightness(91%) contrast(87%);
+$color-white-filtered: brightness(0) saturate(100%) invert(100%) sepia(17%) saturate(7406%) hue-rotate(288deg) brightness(123%) contrast(120%);
+$color-grey-filtered: brightness(0) saturate(100%) invert(26%) sepia(5%) saturate(11%) hue-rotate(355deg) brightness(103%) contrast(87%);
+
+// Typography ==================
+
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Racing Sans One', cursive;
+
+$font-size-base: 1rem;
+$font-size-XS: $font-size-base * 0.65;
+$font-size-S: $font-size-base * 0.85;
+$font-size-M: $font-size-base * 0.90;
+$font-size-L: $font-size-base * 2.5;
+
+// Layout ======================
+
+$base-border-width: 1px;
+$margin-centered: 0 auto;
+
+// Mixins ======================
+
+@mixin glass-effect-background {
+    background: hsla(0, 0%, 100%, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1.88rem hsla(0, 0%, 0%, 0.1);
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+    border: $base-border-width solid hsla(0, 0%, 100%, 0.1);
+}
+
+@mixin btn-for-movielist {
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+
+    .btn-for-movielist-icon {
+        filter: $color-white-filtered;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}

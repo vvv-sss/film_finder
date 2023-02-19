@@ -1,0 +1,90 @@
+.movielist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+
+    .movie {
+        display: grid;
+        grid-template-columns: 7.6rem 3rem 1fr;
+        grid-template-rows: 3.33rem 3.33rem 3.33rem 1fr;
+        grid-template-areas: 
+        "poster btns description"
+        "poster btns description"
+        "poster btns description"
+        "info info info";
+        width: 100%;
+        margin: 0.5rem 0;
+        overflow: hidden;
+        @include glass-effect-background;
+
+        .movie-poster {
+            grid-area: poster;
+            width: 7.7rem;
+            height: 10rem;
+            -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+                    mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+                    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+        }
+
+        .movielist-btns {
+            grid-area: btns;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+                    align-items: start;
+        }
+
+        .movielist-description {
+            grid-area: description;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+            padding-left: 0.5rem;
+            margin-left: -0.5rem;
+            margin-right: 1rem;
+
+            h3 {
+                color: $primary-color;
+                font-size: $font-size-M;
+            }
+
+            p {
+                font-size: $font-size-S;
+                font-style: italic;
+            }
+        }
+
+        @-webkit-keyframes exit {
+            100% {
+                scale: 0
+            }
+        }
+        @keyframes exit {
+            100% {
+                scale: 0
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.home {
+    position: relative;
+    max-width: 30rem;
+    margin: $margin-centered;
+    margin-bottom: 3rem;
+
+    .home__form-container {
+        position: relative;
+        max-width: 40rem;
+        padding: 1rem;
+        margin: $margin-centered;
+        margin-top: 1rem;
+        text-align: center;
+        overflow: hidden;
+        @include glass-effect-background;
+    
+        h1 {
+            padding-bottom: 0;
+            border-bottom: $base-border-width solid $color-grey;
+            color: $primary-color;
+            font-family: $font-family-secondary;
+            font-size: $font-size-L;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+    
+        p {
+            padding: 0.5rem 1rem;
+            margin: $margin-centered;
+            margin-top: -0.5rem;
+            font-weight: 300;
+            white-space: nowrap;
+        }
+    
+        #lightning-bolt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            width: 30rem;
+            height: 30rem;
+            -webkit-filter: $color-white-filtered;
+                    filter: $color-white-filtered;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    }
+}
+

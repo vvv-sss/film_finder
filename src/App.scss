@@ -1,0 +1,38 @@
+// External fonts =========================================
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+// CSS Reset ==============================================
+@import './assets/scss/css-reset.scss';
+
+// Variables & Functions ==================================
+@import './assets/scss/variables.scss';
+
+// Global Styles ==========================================
+@import './assets/scss/global-styles.scss';
+@import './assets/scss/components/ErrorMsg.scss';
+
+// Components =============================================
+
+// NavBar =====================
+@import './assets/scss/components/navbar/NavBar.scss';
+
+// Home =======================
+@import './assets/scss/components/home/Home.scss';
+@import './assets/scss/components/home/Form.scss';
+@import './assets/scss/components/home/ListOfGenres.scss';
+@import './assets/scss/components/home/FetchedMovie.scss';
+@import './assets/scss/components/home/ButtonsToRate.scss';
+
+// Watchlist ==================
+@import './assets/scss/components/watchlist/Watchlist.scss';
+
+// Favorites ==================
+@import './assets/scss/components/favorites/Favorites.scss';
+
+
+
+
+
+
+

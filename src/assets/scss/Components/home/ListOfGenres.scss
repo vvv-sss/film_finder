@@ -1,0 +1,42 @@
+.genres-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.15rem;
+    width: 100%;
+    margin: $margin-centered;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    input {
+        padding: 0;
+        margin: 0;
+        transform: scale(0);
+    }
+
+    input:focus + label {
+        background-color: $primary-color !important;
+    }
+
+    label {
+        position: relative;
+        padding: 0.25rem 0.5rem;
+        border-radius: 100rem;
+        font-size: $font-size-S;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: $primary-color !important;
+        }
+    }
+}
+
+
+
+
+

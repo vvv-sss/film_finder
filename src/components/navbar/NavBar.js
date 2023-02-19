@@ -31,7 +31,7 @@ const NavBar = () => {
             >
                 <ul>
                     <li>
-                        <NavLink to="home">Home</NavLink>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li onClick={ () => setWatchListCounter(0) }>
                         <NavLink to="watchlist">

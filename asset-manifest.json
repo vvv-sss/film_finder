@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/film_finder/static/css/main.5e6c7ce4.css",
+    "main.js": "/film_finder/static/js/main.358cada3.js",
+    "static/media/bg-desktop.jpg": "/film_finder/static/media/bg-desktop.d0d3002b6c7c6a7eff79.jpg",
+    "static/media/add_to_favorites_icon.jpg": "/film_finder/static/media/add_to_favorites_icon.3f5364055eac7f8d5310.jpg",
+    "static/media/genres_bg.png": "/film_finder/static/media/genres_bg.f733a4234bcb44c217a4.png",
+    "static/media/sad_icon.png": "/film_finder/static/media/sad_icon.7b288eaf333b20f56cdf.png",
+    "static/media/dollar_icon.png": "/film_finder/static/media/dollar_icon.6c166ec606ecf18bd26a.png",
+    "static/media/world_icon.png": "/film_finder/static/media/world_icon.8a93835e517c4fcf7d0e.png",
+    "static/media/btn_icon.png": "/film_finder/static/media/btn_icon.2b4be18b12b4d5c83995.png",
+    "static/media/link_icon.png": "/film_finder/static/media/link_icon.f34651288451b13efec3.png",
+    "index.html": "/film_finder/index.html",
+    "main.5e6c7ce4.css.map": "/film_finder/static/css/main.5e6c7ce4.css.map",
+    "main.358cada3.js.map": "/film_finder/static/js/main.358cada3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e6c7ce4.css",
+    "static/js/main.358cada3.js"
+  ]
+}
